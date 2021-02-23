@@ -6,10 +6,8 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.akjaw.flavor_multibinding.R
-import com.akjaw.flavor_multibinding.view.adapter.basketball.BasketballMatch
-import com.akjaw.flavor_multibinding.view.adapter.football.FootballMatch
-import com.akjaw.flavor_multibinding.view.adapter.basketball.basketballMatchesAdapterDelegate
-import com.akjaw.flavor_multibinding.view.adapter.football.footballMatchesAdapterDelegate
+import com.akjaw.flavor_multibinding.view.adapter.FootballMatch
+import com.akjaw.flavor_multibinding.view.adapter.footballMatchesAdapterDelegate
 import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
 
 
@@ -17,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     private val adapter = ListDelegationAdapter(
         footballMatchesAdapterDelegate(),
-        basketballMatchesAdapterDelegate(),
+        com.akjaw.premium.view.adapter.basketballMatchesAdapterDelegate(),
     )
     private lateinit var recyclerView: RecyclerView
 
@@ -40,11 +38,11 @@ class MainActivity : AppCompatActivity() {
 
         adapter.items = listOf(
             FootballMatch("Home", "Away"),
-            BasketballMatch("1", "2"),
-            BasketballMatch("Home", "Away"),
+            com.akjaw.premium.view.adapter.BasketballMatch("1", "2"),
+            com.akjaw.premium.view.adapter.BasketballMatch("Home", "Away"),
             FootballMatch("1", "2"),
-            BasketballMatch("Home", "Away"),
-            BasketballMatch("1", "2"),
+            com.akjaw.premium.view.adapter.BasketballMatch("Home", "Away"),
+            com.akjaw.premium.view.adapter.BasketballMatch("1", "2"),
             FootballMatch("Home", "Away"),
         )
     }

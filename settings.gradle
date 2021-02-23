@@ -1,2 +1,4 @@
+include ':framework'
 include ':app'
+include ':app:app-premium'
 rootProject.name = "FlavorMultibinding"

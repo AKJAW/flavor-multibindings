@@ -1,8 +1,8 @@
-package com.akjaw.flavor_multibinding.view.adapter.football
+package com.akjaw.flavor_multibinding.view.adapter
 
 import android.widget.TextView
 import com.akjaw.flavor_multibinding.R
-import com.akjaw.flavor_multibinding.view.adapter.DisplayableItem
+import com.akjaw.framework.view.DisplayableItem
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegate
 
 fun footballMatchesAdapterDelegate() =

@@ -1,4 +1,4 @@
-package com.akjaw.flavor_multibinding.view.adapter
+package com.akjaw.flavor_multibinding.view.adapter.football
 
 import com.akjaw.framework.view.DisplayableItem
 

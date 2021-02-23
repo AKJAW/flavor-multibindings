@@ -6,23 +6,23 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.akjaw.flavor_multibinding.R
-import com.akjaw.flavor_multibinding.view.adapter.FootballMatch
-import com.akjaw.flavor_multibinding.view.adapter.footballMatchesAdapterDelegate
-import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
-
+import com.akjaw.flavor_multibinding.view.adapter.MatchListAdapter
+import com.akjaw.flavor_multibinding.view.adapter.football.FootballMatch
 
 class MainActivity : AppCompatActivity() {
 
-    private val adapter = ListDelegationAdapter(
-        footballMatchesAdapterDelegate(),
-        com.akjaw.premium.view.adapter.basketballMatchesAdapterDelegate(),
-    )
+    private val matchesListAdapterFactory by lazy {
+        val component = (application as FlavorMultibindingApp).applicationComponent
+        component.matchListAdapterFactory()
+    }
+    private lateinit var adapter: MatchListAdapter
     private lateinit var recyclerView: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        adapter = matchesListAdapterFactory.create()
         recyclerView = findViewById<RecyclerView>(R.id.match_recycler_view).apply {
             val layoutManager = LinearLayoutManager(context)
             this.layoutManager = layoutManager
@@ -36,14 +36,16 @@ class MainActivity : AppCompatActivity() {
         }
         recyclerView.adapter = adapter
 
-        adapter.items = listOf(
-            FootballMatch("Home", "Away"),
-            com.akjaw.premium.view.adapter.BasketballMatch("1", "2"),
-            com.akjaw.premium.view.adapter.BasketballMatch("Home", "Away"),
-            FootballMatch("1", "2"),
-            com.akjaw.premium.view.adapter.BasketballMatch("Home", "Away"),
-            com.akjaw.premium.view.adapter.BasketballMatch("1", "2"),
-            FootballMatch("Home", "Away"),
+        adapter.setItems(
+            listOf(
+                FootballMatch("Home", "Away"),
+                com.akjaw.premium.view.adapter.BasketballMatch("1", "2"),
+                com.akjaw.premium.view.adapter.BasketballMatch("Home", "Away"),
+                FootballMatch("1", "2"),
+                com.akjaw.premium.view.adapter.BasketballMatch("Home", "Away"),
+                com.akjaw.premium.view.adapter.BasketballMatch("1", "2"),
+                FootballMatch("Home", "Away"),
+            )
         )
     }
 }

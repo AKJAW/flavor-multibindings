@@ -1,4 +1,6 @@
 include ':framework'
 include ':app'
+include ':dependency:football'
+include ':dependency:bastketball'
 include ':app:app-premium'
 rootProject.name = "FlavorMultibinding"

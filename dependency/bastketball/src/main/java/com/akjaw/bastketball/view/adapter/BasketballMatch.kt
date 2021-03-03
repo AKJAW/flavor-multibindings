@@ -1,8 +1,8 @@
-package com.akjaw.flavor_multibinding.view.adapter.football
+package com.akjaw.bastketball.view.adapter
 
 import com.akjaw.framework.view.DisplayableItem
 
-data class FootballMatch(
+data class BasketballMatch(
     val homeTeamName: String,
     val awayTeamName: String,
 ) : DisplayableItem

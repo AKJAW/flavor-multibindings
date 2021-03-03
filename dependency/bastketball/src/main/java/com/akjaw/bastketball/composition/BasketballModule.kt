@@ -1,13 +1,13 @@
-package com.akjaw.premium.composition
+package com.akjaw.bastketball.composition
 
+import com.akjaw.bastketball.view.adapter.BasketballMatchAdapterDelegate
 import com.akjaw.framework.view.MatchAdapterDelegate
-import com.akjaw.premium.view.adapter.BasketballMatchAdapterDelegate
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoSet
 
 @Module
-abstract class PremiumModule {
+abstract class BasketballModule {
 
     @Binds
     @IntoSet

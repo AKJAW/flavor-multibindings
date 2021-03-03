@@ -1,22 +1,22 @@
-package com.akjaw.premium.view.adapter
+package com.akjaw.football.view.adapter.football
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.akjaw.football.R
 import com.akjaw.framework.view.DisplayableItem
 import com.akjaw.framework.view.MatchAdapterDelegate
-import com.akjaw.premium.R
 import javax.inject.Inject
 
-class BasketballMatchAdapterDelegate @Inject constructor() : MatchAdapterDelegate() {
+class FootballMatchAdapterDelegate @Inject constructor() : MatchAdapterDelegate() {
 
     override fun isForViewType(items: List<DisplayableItem>, position: Int): Boolean =
-        items[position] is BasketballMatch
+        items[position] is FootballMatch
 
     override fun onCreateViewHolder(parent: ViewGroup): RecyclerView.ViewHolder =
-        BasketballMatchViewHolder(
+        FootballMatchViewHolder(
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_basketball_match, parent, false)
+                .inflate(R.layout.item_football_match, parent, false)
         )
 
     override fun onBindViewHolder(
@@ -25,7 +25,7 @@ class BasketballMatchAdapterDelegate @Inject constructor() : MatchAdapterDelegat
         holder: RecyclerView.ViewHolder,
         payloads: MutableList<Any>
     ) {
-        val match = items[position] as BasketballMatch
-        (holder as BasketballMatchViewHolder).bind(match)
+        val match = items[position] as FootballMatch
+        (holder as FootballMatchViewHolder).bind(match)
     }
 }

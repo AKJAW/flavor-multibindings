@@ -1,4 +1,4 @@
-package com.akjaw.flavor_multibinding.view.adapter
+package com.akjaw.football.view.adapter
 
 import com.akjaw.framework.view.MatchAdapterDelegate
 import javax.inject.Inject

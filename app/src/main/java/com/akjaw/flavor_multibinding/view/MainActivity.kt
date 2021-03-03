@@ -5,9 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.akjaw.bastketball.view.adapter.BasketballMatch
 import com.akjaw.flavor_multibinding.R
-import com.akjaw.flavor_multibinding.view.adapter.MatchListAdapter
-import com.akjaw.flavor_multibinding.view.adapter.football.FootballMatch
+import com.akjaw.football.view.adapter.MatchListAdapter
+import com.akjaw.football.view.adapter.football.FootballMatch
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,11 +40,11 @@ class MainActivity : AppCompatActivity() {
         adapter.setItems(
             listOf(
                 FootballMatch("Home", "Away"),
-                com.akjaw.premium.view.adapter.BasketballMatch("1", "2"),
-                com.akjaw.premium.view.adapter.BasketballMatch("Home", "Away"),
+                BasketballMatch("1", "2"),
+                BasketballMatch("Home", "Away"),
                 FootballMatch("1", "2"),
-                com.akjaw.premium.view.adapter.BasketballMatch("Home", "Away"),
-                com.akjaw.premium.view.adapter.BasketballMatch("1", "2"),
+                BasketballMatch("Home", "Away"),
+                BasketballMatch("1", "2"),
                 FootballMatch("Home", "Away"),
             )
         )

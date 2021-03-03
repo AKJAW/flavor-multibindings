@@ -47,8 +47,9 @@ android {
 
 dependencies {
     implementation project(":framework")
+    implementation project(":dependency:football")
 
-    premiumImplementation project(":app:app-premium")
+    premiumImplementation project(":dependency:bastketball")
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'

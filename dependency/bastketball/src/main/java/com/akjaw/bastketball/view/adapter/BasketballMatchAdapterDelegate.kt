@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.akjaw.bastketball.R
 import com.akjaw.framework.view.DisplayableItem
 import com.akjaw.framework.view.MatchAdapterDelegate
-import com.akjaw.premium.view.adapter.BasketballMatchViewHolder
 import javax.inject.Inject
 
 class BasketballMatchAdapterDelegate @Inject constructor() : MatchAdapterDelegate() {

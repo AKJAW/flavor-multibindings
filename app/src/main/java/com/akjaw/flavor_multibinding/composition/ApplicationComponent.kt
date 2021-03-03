@@ -1,10 +1,10 @@
 package com.akjaw.flavor_multibinding.composition
 
-import com.akjaw.football.view.adapter.MatchListAdapterFactory
+import com.akjaw.flavor_multibinding.view.MainActivity
 import dagger.Component
 
 @Component(modules = [MatchListModule::class])
 interface ApplicationComponent {
 
-    fun matchListAdapterFactory(): MatchListAdapterFactory
+    fun inject(mainActivity: MainActivity)
 }

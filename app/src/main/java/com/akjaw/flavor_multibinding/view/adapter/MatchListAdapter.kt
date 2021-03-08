@@ -1,4 +1,4 @@
-package com.akjaw.football.view.adapter
+package com.akjaw.flavor_multibinding.view.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView

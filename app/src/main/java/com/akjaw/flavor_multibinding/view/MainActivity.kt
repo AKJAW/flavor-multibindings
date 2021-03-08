@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.akjaw.flavor_multibinding.R
-import com.akjaw.football.view.adapter.MatchListAdapter
-import com.akjaw.football.view.adapter.MatchListAdapterFactory
+import com.akjaw.flavor_multibinding.view.adapter.MatchListAdapter
+import com.akjaw.flavor_multibinding.view.adapter.MatchListAdapterFactory
 import com.akjaw.framework.domain.MatchesProvider
 import javax.inject.Inject
 

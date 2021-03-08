@@ -13,9 +13,9 @@ abstract class BasketballModule {
 
     @Binds
     @IntoSet
-    abstract fun bindBasketballMatchAdapterDelegate(basketballMatchAdapterDelegate: BasketballMatchAdapterDelegate): MatchAdapterDelegate
+    internal abstract fun bindBasketballMatchAdapterDelegate(basketballMatchAdapterDelegate: BasketballMatchAdapterDelegate): MatchAdapterDelegate
 
     @Binds
     @IntoSet
-    abstract fun bindBasketballMatchesProvider(basketballMatchesProvider: BasketballMatchesProvider): MatchesProvider
+    internal abstract fun bindBasketballMatchesProvider(basketballMatchesProvider: BasketballMatchesProvider): MatchesProvider
 }

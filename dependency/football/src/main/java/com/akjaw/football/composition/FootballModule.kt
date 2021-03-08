@@ -13,9 +13,9 @@ abstract class FootballModule {
 
     @Binds
     @IntoSet
-    abstract fun bindFootballMatchAdapterDelegate(footballMatchAdapterDelegate: FootballMatchAdapterDelegate): MatchAdapterDelegate
+    internal abstract fun bindFootballMatchAdapterDelegate(footballMatchAdapterDelegate: FootballMatchAdapterDelegate): MatchAdapterDelegate
 
     @Binds
     @IntoSet
-    abstract fun bindFootballMatchesProvider(basketballMatchesProvider: FootballMatchesProvider): MatchesProvider
+    internal abstract fun bindFootballMatchesProvider(basketballMatchesProvider: FootballMatchesProvider): MatchesProvider
 }

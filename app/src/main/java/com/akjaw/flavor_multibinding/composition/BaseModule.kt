@@ -1,8 +1,7 @@
-package akjaw.flavor_multibinding
+package com.akjaw.flavor_multibinding.composition
 
-import com.akjaw.flavor_multibinding.composition.MatchListModule
 import com.akjaw.football.composition.FootballModule
 import dagger.Module
 
 @Module(includes = [MatchListModule::class, FootballModule::class])
-class AppModule
+abstract class BaseModule

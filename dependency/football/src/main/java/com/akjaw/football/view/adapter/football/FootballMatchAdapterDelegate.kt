@@ -1,22 +1,25 @@
 package com.akjaw.football.view.adapter.football
 
-import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.akjaw.football.R
+import com.akjaw.framework.domain.IconConfig
 import com.akjaw.framework.view.DisplayableItem
 import com.akjaw.framework.view.MatchAdapterDelegate
+import com.akjaw.framework.view.inflateLayout
 import javax.inject.Inject
 
-class FootballMatchAdapterDelegate @Inject constructor() : MatchAdapterDelegate() {
+internal class FootballMatchAdapterDelegate @Inject constructor(
+    private val iconConfig: IconConfig
+) : MatchAdapterDelegate() {
 
     override fun isForViewType(items: List<DisplayableItem>, position: Int): Boolean =
         items[position] is FootballMatch
 
     override fun onCreateViewHolder(parent: ViewGroup): RecyclerView.ViewHolder =
         FootballMatchViewHolder(
-            LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_football_match, parent, false)
+            parent.inflateLayout(R.layout.item_football_match),
+            iconConfig
         )
 
     override fun onBindViewHolder(

@@ -12,7 +12,8 @@ abstract class FrameworkModule {
     @Multibinds
     abstract fun multibindIconConfig(): Set<IconConfig>
 
-    companion object {
+    companion object { // Custom or default for providing matches
+        // Analytics, default goes to debug, premium is logged in a "framework"
 
         @Provides
         fun provideCustomOrDefaultIconConfig(

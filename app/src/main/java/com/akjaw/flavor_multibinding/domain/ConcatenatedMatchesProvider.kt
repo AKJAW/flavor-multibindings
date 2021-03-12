@@ -5,7 +5,7 @@ import com.akjaw.framework.view.DisplayableItem
 import javax.inject.Inject
 
 class ConcatenatedMatchesProvider @Inject constructor(
-    private val matchesProvider: Set<@JvmSuppressWildcards MatchesProvider>
+    private val matchesProvider: Set<@JvmSuppressWildcards MatchesProvider> //The order is random
 ): MatchesProvider {
 
     override fun get(): List<DisplayableItem> {

@@ -1,6 +1,6 @@
-package akjaw.flavor_multibinding.composition
+package akjaw.flavor_multibindings.composition
 
-import akjaw.flavor_multibinding.domain.ConcatenatedMatchesProvider
+import akjaw.flavor_multibindings.domain.ConcatenatedMatchesProvider
 import com.akjaw.framework.domain.MatchesProvider
 import dagger.Binds
 import dagger.Module

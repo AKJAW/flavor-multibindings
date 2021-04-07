@@ -1,13 +1,13 @@
-package com.akjaw.flavor_multibinding.view
+package com.akjaw.flavor_multibindings.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.akjaw.flavor_multibinding.R
-import com.akjaw.flavor_multibinding.view.adapter.MatchListAdapter
-import com.akjaw.flavor_multibinding.view.adapter.MatchListAdapterFactory
+import com.akjaw.flavor_multibindings.R
+import com.akjaw.flavor_multibindings.view.adapter.MatchListAdapter
+import com.akjaw.flavor_multibindings.view.adapter.MatchListAdapterFactory
 import com.akjaw.framework.domain.MatchesProvider
 import javax.inject.Inject
 

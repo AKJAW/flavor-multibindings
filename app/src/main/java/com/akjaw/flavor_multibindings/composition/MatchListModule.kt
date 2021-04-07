@@ -1,4 +1,4 @@
-package com.akjaw.flavor_multibinding.composition
+package com.akjaw.flavor_multibindings.composition
 
 import com.akjaw.football.domain.FootballMatchesProvider
 import com.akjaw.framework.composition.customOrDefault

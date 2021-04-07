@@ -1,4 +1,4 @@
-package akjaw.flavor_multibinding.domain
+package akjaw.flavor_multibindings.domain
 
 import com.akjaw.bastketball.domain.BasketballMatchesProvider
 import com.akjaw.football.domain.FootballMatchesProvider

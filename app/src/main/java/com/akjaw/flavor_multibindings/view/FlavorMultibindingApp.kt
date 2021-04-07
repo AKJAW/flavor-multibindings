@@ -1,8 +1,8 @@
-package com.akjaw.flavor_multibinding.view
+package com.akjaw.flavor_multibindings.view
 
 import android.app.Application
-import com.akjaw.flavor_multibinding.composition.ApplicationComponent
-import com.akjaw.flavor_multibinding.composition.DaggerApplicationComponent
+import com.akjaw.flavor_multibindings.composition.ApplicationComponent
+import com.akjaw.flavor_multibindings.composition.DaggerApplicationComponent
 
 class FlavorMultibindingApp : Application() {
 

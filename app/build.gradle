@@ -9,7 +9,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.akjaw.flavor_multibinding"
+        applicationId "com.akjaw.flavor_multibindings"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1

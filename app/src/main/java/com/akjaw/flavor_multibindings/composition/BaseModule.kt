@@ -1,4 +1,4 @@
-package com.akjaw.flavor_multibinding.composition
+package com.akjaw.flavor_multibindings.composition
 
 import com.akjaw.football.composition.FootballModule
 import dagger.Module
